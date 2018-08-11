@@ -1,0 +1,28 @@
+﻿***
+NEW PROJECT folder
+
++ Bootstrap 4.1.1
++ Scss preprocessor
++ Jquery 3.3.1
+
++ Folder :
+	+ document.txt
+	+ images
+	+ scss
+	  + components (Các module)
+	  + elements (Style cho các đối tượng HTML cơ bản: ul, span,...)
+	  + generic (Chỉ sử dụng file reset.scss và normalize.scss có sẵn)
+	  + objects (Các đối tượng tái sử dụng và cần xây dựng theo OOCSS - Module nhỏ)
+	  + settings */Nơi đặt các giá trị biến global sử dụng cho tổng quan dự án*/
+	  + themes (Style cho các giao diện riêng biệt)
+	  + tools (Nơi viết các mixin hỗ trợ)
+	  + trumps (Nơi sử dụng !important)
+	  - styles.css
+	  - styles.css.map
+	  - styles.scss
+	+ js
+	  - main.js
+	+ index.html
+
+***
+Created: 14/05/2018

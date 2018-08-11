@@ -1,0 +1,24 @@
+.footer {
+    color: $white;
+    background-color: $gray-lighter1;
+    padding: 45px 0 42px 0;
+    @media (max-width: 991px) {
+        padding: 35px 0 32px 0;
+    }
+    &__logo-wrap {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        @media (max-width: 991px) {
+            padding-bottom: 15px;
+        }
+    }
+    &__title {
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+    &__element {
+        font-weight: 500;
+        line-height: 25px;
+    }
+}
