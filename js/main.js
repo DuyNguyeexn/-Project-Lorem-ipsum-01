@@ -5,8 +5,10 @@ $(document).ready(function() {
     function scrollFunction() {
         if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
             document.getElementById("scroll-top").style.display = "block";
+            $('.navbar').addClass('header-small');
         } else {
             document.getElementById("scroll-top").style.display = "none";
+            $('.navbar').removeClass('header-small');
         }
     }
     function topFunction() {

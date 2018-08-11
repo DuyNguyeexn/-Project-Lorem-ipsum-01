@@ -1,0 +1,10 @@
+.banner-slide {
+    overflow: hidden;
+    &__img-wrap {
+        width: 100%;
+        height: 100%;
+        background-image: url(../images/banner/banner-1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}

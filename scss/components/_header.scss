@@ -1,4 +1,18 @@
 .header {
+    .navbar {
+        transition: 0.3s;
+        &.header-small {
+            @media (min-width: 992px) {
+                padding: 0;
+                background: $black-opacity-3;
+            }
+            .navbar-brand {
+                @media (min-width: 992px) {
+                    width: 100px;
+                }
+            }
+        }
+    }
     .navbar-nav {
         margin-left: auto;
         @media (max-width: 991px) {
