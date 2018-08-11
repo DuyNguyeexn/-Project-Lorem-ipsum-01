@@ -568,21 +568,15 @@ button:active {
   margin-bottom: 20px;
 }
 
-.services {
+.wrap-element {
+  background-image: url(../images/background/background-2.png);
+  background-repeat: no-repeat;
+  background-position: 0 280px;
+  margin-bottom: -300px;
   position: relative;
   top: -300px;
 }
-.services::before {
-  content: '';
-  background: #D6D6D6;
-  width: 100%;
-  height: calc(100% - 300px);
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-}
+
 .services__wrap {
   width: 800px;
   text-align: center;
@@ -681,6 +675,7 @@ button:active {
 .clients__border {
   width: 800px;
   border: solid 2px #000000;
+  background-color: #ffffff;
   padding: 40px 30px;
   margin: auto;
 }
@@ -816,4 +811,39 @@ button:active {
   margin-left: 0;
 }
 
+body {
+  margin: 0;
+}
+
+#slider, #slider .sliderInner {
+  width: 100% !important;
+  height: 100vh;
+  border-radius: 0 !important;
+}
+
+#slider {
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
+}
+
+.banner-slide img {
+  width: 100%;
+}
+
+#slider .navBulletsWrapper {
+  top: calc(100vh - 30px);
+}
+
+#slider .navBulletsWrapper div {
+  background-image: unset;
+  background-color: transparent;
+  border: solid 1px #B9D656;
+  border-radius: 50%;
+}
+
+#slider .navBulletsWrapper .active {
+  width: 11px;
+  height: 11px;
+  background-color: #B9D656;
+}
 /*# sourceMappingURL=styles.css.map */

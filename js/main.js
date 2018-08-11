@@ -30,4 +30,8 @@ $(document).ready(function() {
         $(this).addClass('active');
     });
     // end Active Language
+
+    // Wow active
+    new WOW().init();
+    // end Wow active
 });

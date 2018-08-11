@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+}
+#slider, #slider .sliderInner {
+    width: 100% !important;
+    height: 100vh;
+    border-radius: 0 !important;
+}
+#slider {
+    box-shadow: unset;
+}
+.banner-slide img {
+    width: 100%;
+}
+#slider .navBulletsWrapper {
+    top: calc(100vh - 30px);
+}
+#slider .navBulletsWrapper div {
+    background-image: unset;
+    background-color: transparent;
+    border: solid 1px $green;
+    border-radius: 50%;
+}
+#slider .navBulletsWrapper .active {
+    width: 11px;
+    height: 11px;
+    background-color: $green;
+}

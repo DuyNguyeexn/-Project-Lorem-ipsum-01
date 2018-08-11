@@ -9,6 +9,10 @@
         <title>Kiwi Media</title>
         <!-- Favicon icon -->
         <link rel="icon" href="images/kiwi-favicon.png" type="image/gif" sizes="16x16">
+        <!-- JsImgSlider -->
+        <link rel="stylesheet" href="libs/jsimgslider/js-image-slider.css">
+        <!-- Animate css -->
+        <link rel="stylesheet" href="libs/animate/animate.css">
         <!-- Montserrat fonts -->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
         <!-- Flaticon fonts -->
@@ -24,7 +28,7 @@
                 <nav class="navbar navbar-expand-sm fixed-top">
                     <div class="container">
                         <h1 class="header__logo-wrap">
-                            <a class="navbar-brand" href="#">
+                            <a class="navbar-brand" href="index.html">
                                 <img class="img-fluid" src="images/kiwi-logo.png" alt="Kiwi Media">
                             </a>
                         </h1>
@@ -77,15 +81,21 @@
 
             <!-- BANNER SLIDE -->
             <section id="section1" class="banner-slide">
-                <div class="banner-slide__img-wrap"></div>
+                <div id="slider" class="banner-slide">
+                    <img src="images/banner/banner-1.png" alt="" />
+                    <img src="images/banner/banner-2.png" alt="" />
+                    <img src="images/banner/banner-3.png" alt="" />
+                    <img src="images/banner/banner-1.png" alt="" />
+                    <img src="images/banner/banner-2.png" alt="" />
+                </div>
             </section>
             <!-- end BANNER SLIDE -->
 
             <!-- ABOUT US section -->
             <section id="section2" class="about">
-                <h2 class="title-h2">About us</h2>
+                <h2 class="title-h2 wow animated fadeInDown" data-wow-duration="0.8s" data-wow-delay="0.3s">About us</h2>
                 <div class="container">
-                    <div class="section-main">
+                    <div class="section-main wow animated fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
                         <div class="about__text-wrap">
                             <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                             <p class="about__text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -95,37 +105,37 @@
             </section>
             <!-- end ABOUT US section -->
 
-            <!-- SERVICES -->
-            <section id="section3" class="services">
+            <!-- Wrap element -->
+            <section id="section3" class="wrap-element">
 
-                <!-- Services wrap -->
-                <div class="services__wrap">
-                    <h2 class="title-h2">Services</h2>
-                    <p class="sub-title">We certainly do not want to be a fool to spend too much on a company’s money in exchange for a special media package.</p>
+                <!-- SERVICES -->
+                <section class="services__wrap services">
+                    <h2 class="title-h2 wow animated fadeInDown" data-wow-duration="0.8s" data-wow-delay="0.3s">Services</h2>
+                    <p class="sub-title wow animated fadeInDown" data-wow-duration="0.8s" data-wow-delay="0.4s">We certainly do not want to be a fool to spend too much on a company’s money in exchange for a special media package.</p>
                     <div class="section-main">
                         <div class="services__elements">
-                            <div class="services__element">
+                            <div class="services__element wow zoomIn animated" data-wow-duration="0.8s" data-wow-delay="0.3s">
                                 <div class="services__wrap-img">
                                     <img src="images/icons/design-production.svg" alt="" class="services__icon services__icon--design">
                                 </div>
                                 <h3 class="title-h4">DESIGN & PRODUCTION</h3>
                                 <p class="services__text">Design of creative advertising package Design of corporate’s publications: annual reports, profiles, brochures, catalogues, ...</p>
                             </div>
-                            <div class="services__element">
+                            <div class="services__element wow zoomIn animated" data-wow-duration="0.8s" data-wow-delay="0.4s">
                                 <div class="services__wrap-img">
                                     <img src="images/icons/communication.svg" alt="" class="services__icon services__icon--communication">
                                 </div>
                                 <h3 class="title-h4">COMMUNICATION & ADVERTISING</h3>
                                 <p class="services__text">Design of creative advertising package Design of corporate’s publications: annual reports, profiles, brochures, catalogues, ...</p>
                             </div>
-                            <div class="services__element">
+                            <div class="services__element wow zoomIn animated" data-wow-duration="0.8s" data-wow-delay="0.5s">
                                 <div class="services__wrap-img">
                                     <img src="images/icons/consultancy.svg" alt="" class="services__icon services__icon--consultancy">
                                 </div>
                                 <h3 class="title-h4">CONSULTANCY & ORGANIZATION OF EVENTS</h3>
                                 <p class="services__text">Design of creative advertising package Design of corporate’s publications: annual reports, profiles, brochures, catalogues, ...</p>
                             </div>
-                            <div class="services__element">
+                            <div class="services__element wow zoomIn animated" data-wow-duration="0.8s" data-wow-delay="0.6s">
                                 <div class="services__wrap-img">
                                     <img src="images/icons/branding.svg" alt="" class="services__icon services__icon--branding">
                                 </div>
@@ -134,19 +144,19 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- end Services wrap -->
+                </section>
+                <!-- end SERVICES -->
 
                 <!-- PROJECTS -->
                 <section id="section4" class="projects">
-                    <h2 class="title-h2">Projects</h2>
+                    <h2 class="title-h2 wow animated fadeInDown" data-wow-duration="0.8s" data-wow-delay="0.3s">Projects</h2>
                     <div class="section-main">
                         <div class="container">
                             <div class="row projects__row">
 
                                 <div class="col-md-4 projects__col">
                                     <!-- BOX -->
-                                    <div class="box">
+                                    <div class="box wow zoomIn animated" data-wow-duration="0.8s" data-wow-delay="0.3s">
                                         <div class="box__img-wrap">
                                             <img src="images/img3.jpg" alt="" class="box__img">
                                         </div>
@@ -166,7 +176,7 @@
 
                                 <div class="col-md-4 projects__col">
                                     <!-- BOX -->
-                                    <div class="box">
+                                    <div class="box wow zoomIn animated" data-wow-duration="0.8s" data-wow-delay="0.4s">
                                         <div class="box__img-wrap">
                                             <img src="images/img2.jpg" alt="" class="box__img">
                                         </div>
@@ -186,7 +196,7 @@
 
                                 <div class="col-md-4 projects__col">
                                     <!-- BOX -->
-                                    <div class="box">
+                                    <div class="box wow zoomIn animated" data-wow-duration="0.8s" data-wow-delay="0.5s">
                                         <div class="box__img-wrap">
                                             <img src="images/img1.jpg" alt="" class="box__img">
                                         </div>
@@ -213,8 +223,8 @@
                 <!-- CLIENTS -->
                 <section id="section5" class="clients">
                     <div class="clients__border">
-                        <h2 class="title-h2">Clients</h2>
-                        <div class="section-main">
+                        <h2 class="title-h2 wow animated fadeInDown" data-wow-duration="0.8s" data-wow-delay="0.3s">Clients</h2>
+                        <div class="section-main wow animated zoomIn" data-wow-duration="0.8s" data-wow-delay="0.3s">
                             <div class="clients__wrap">
                                 <div class="clients__item"><a href="" class="clients__link"><img src="http://placehold.it/200x120" alt=""></a></div>
                                 <div class="clients__item"><a href="" class="clients__link"><img src="http://placehold.it/200x120" alt=""></a></div>
@@ -234,33 +244,31 @@
                 </section>
                 <!-- end CLIENTS -->
             </section>
-            <!-- end SERVICES -->
-
-            
+            <!-- end Wrap element -->
 
             <!-- NEWS -->
             <section id="section6" class="news">
-                <h2 class="title-h2">news</h2>
+                <h2 class="title-h2 wow animated fadeInDown" data-wow-duration="0.8s" data-wow-delay="0.3s">news</h2>
                 <div class="section-main">
                     <!-- NEWS ELEMENT -->
                     <div class="news__element">
                         <div class="news__title-bg">
                             <div class="container">
-                                <h3 class="title-h3">RECRUITMENT</h3>
+                                <h3 class="title-h3 wow animated fadeInDown" data-wow-duration="0.8s" data-wow-delay="0.4s">RECRUITMENT</h3>
                             </div>
                         </div>
                         <div class="container">
                             <div class="news__wrap-elem">
                                 <div class="news__content">
-                                    <h3 class="title-h3">the nature of the event organizer</h3>
-                                    <p class="news__text">
+                                    <h3 class="title-h3 wow animated slideInLeft" data-wow-duration="0.8s" data-wow-delay="0.3s">the nature of the event organizer</h3>
+                                    <p class="news__text wow animated slideInLeft" data-wow-duration="0.8s" data-wow-delay="0.4s">
                                         <span class="news__text-highlinght">Recruitment</span>
                                         lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...
                                     </p>
-                                    <button class="button-more">Read more</button>
+                                    <button class="button-more wow animated zoomIn" data-wow-duration="0.8s" data-wow-delay="0.5s">Read more</button>
                                     <div class="clearfix"></div>
                                 </div>
-                                <div class="news__img">
+                                <div class="news__img wow animated zoomIn" data-wow-duration="0.8s" data-wow-delay="0.3s">
                                     <img src="http://placehold.it/500x500" alt="">
                                 </div>
                             </div>
@@ -278,15 +286,15 @@
                         <div class="container">
                             <div class="news__wrap-elem">
                                 <div class="news__content">
-                                    <h3 class="title-h3">the nature of the event organizer</h3>
-                                    <p class="news__text">
+                                    <h3 class="title-h3 wow animated slideInLeft" data-wow-duration="0.8s" data-wow-delay="0.3s">the nature of the event organizer</h3>
+                                    <p class="news__text wow animated slideInLeft" data-wow-duration="0.8s" data-wow-delay="0.4s">
                                         <span class="news__text-highlinght">Recruitment</span>
                                         lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...
                                     </p>
-                                    <button class="button-more">Read more</button>
+                                    <button class="button-more wow animated zoomIn" data-wow-duration="0.8s" data-wow-delay="0.5s">Read more</button>
                                     <div class="clearfix"></div>
                                 </div>
-                                <div class="news__img">
+                                <div class="news__img wow animated zoomIn" data-wow-duration="0.8s" data-wow-delay="0.3s">
                                     <img src="http://placehold.it/500x500" alt="">
                                 </div>
                             </div>
@@ -300,15 +308,15 @@
             <!-- CONTACT -->
             <section id="section7" class="contact">
                 <div class="container">
-                    <h2 class="title-h2">contact us</h2>
+                    <h2 class="title-h2 wow animated fadeInDown" data-wow-duration="0.8s" data-wow-delay="0.3s">contact us</h2>
                     <p class="sub-title"><span>Email us: </span><a href="">sales.kiwimedia@gmail.com</a> <span>/</span> <a href="">ngalv@kiwimedia.com.vn</a> <span>or</span> <a href="">ngocnp@kiwimedia.com.vn</a></p>
                     <div class="section-main">
                         <form class="contact__form" action="">
-                            <input type="text" class="contact__input" placeholder="Your Name*">
-                            <input type="text" class="contact__input" placeholder="Address*">
-                            <input type="text" class="contact__input" placeholder="Phone Number*">
-                            <textarea class="contact__textarea" name="" id="" cols="30" rows="10" placeholder="Message*"></textarea>
-                            <button class="contact__button button-more" type="submit">Send</button>
+                            <input type="text" class="contact__input wow animated fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s" placeholder="Your Name*">
+                            <input type="text" class="contact__input wow animated fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s" placeholder="Address*">
+                            <input type="text" class="contact__input wow animated fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s" placeholder="Phone Number*">
+                            <textarea class="contact__textarea wow animated fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.6s" name="" id="" cols="30" rows="10" placeholder="Message*"></textarea>
+                            <button class="contact__button button-more wow animated zoomIn" data-wow-duration="0.8s" data-wow-delay="0.7s" type="submit">Send</button>
                             <div class="clearfix"></div>
                         </form>
                     </div>
@@ -366,6 +374,10 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+        <!-- JsImgSlider -->
+        <script src="libs/jsimgslider/js-image-slider.js"></script>
+        <!-- Wow Js -->
+        <script src="libs/wowjs/wow.min.js"></script>
         <!-- Main Js -->
         <script src="js/main.js"></script>
         <script src="js/smooth-scrolling.js"></script>
