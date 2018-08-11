@@ -2,7 +2,7 @@
 //     padding-top: 100px;
 // }
 .scroll-top {
-    display: inline-block;
+    display: none;
     width: 40px;
     height: 40px;
     color: $green;
@@ -33,6 +33,7 @@
     }
 }
 
+#section-wrap-element,
 #section1,
 #section2,
 #section3,

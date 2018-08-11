@@ -4,7 +4,7 @@ $(document).ready(function() {
     window.onscroll = function() {scrollFunction()};
     function scrollFunction() {
         if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-            document.getElementById("scroll-top").style.display = "block";
+            document.getElementById("scroll-top").style.display = "inline-block";
             $('.navbar').addClass('header-small');
         } else {
             document.getElementById("scroll-top").style.display = "none";
