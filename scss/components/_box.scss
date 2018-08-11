@@ -1,0 +1,97 @@
+.box {
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;
+    &::before {
+        content: '';
+        display: inline-block;
+        width: 0;
+        height: 0;
+        background-color: transparent;
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        top: 50%;
+        bottom: 50%;
+        transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    }
+    &__img {
+        display: block;
+        width: 100%;
+    }
+    &__link {
+        text-align: center;
+        background-color: $pink-opacity-4;
+        padding: 15px 5px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        &:hover {
+            .title-h5 {
+                color: $green;
+            }
+        }
+    }
+    .title-h5 {
+        text-transform: uppercase;
+        transition: 0.3s;
+    }
+    &__line {
+        width: 0;
+        border-bottom: solid 2px $white;
+        position: absolute;
+        top: 75px;
+        left: 30px;
+        right: 30px;
+        transition: 0.5s;
+    }
+    &__icons {
+        display: inline-block;
+        padding: 0 7px;
+        position: absolute;
+        top: 50%;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.3s;
+        &--camera {
+            left: 23px;
+        }
+        &--share {
+            left: 73px;
+            transition-delay: 0.1s;
+        }
+        &:hover {
+            .box__icon::before {
+                color: $green;
+            }
+        }
+    }
+    &__icon {
+        &::before {
+            color: $white;
+            font-size: 30px;
+            transition: 0.3s;
+        }
+    }
+    &:hover {
+        cursor: pointer;
+        &::before {
+            width: 1000px;
+            height: 1000px;
+            background-color: $pink-opacity-4;
+            border-radius: 0;
+            transform: translate(-500px, -500px);
+        }
+        .box__line {
+            width: calc(100% - 60px);
+            right: 30px;
+        }
+        .box__icons {
+            top: 30px;
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}

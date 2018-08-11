@@ -16,6 +16,7 @@
 }
 
 .services {
+    // background-image: url(../images/background/background-2.png);
     position: relative;
     top: -300px;
     &::before {
@@ -95,7 +96,149 @@
 }
 
 .projects {
-    background-image: url(../images/background/background-2.png);
     background-repeat: no-repeat;
     background-size: cover;
+    padding-bottom: 5px;
+    .title-h2 {
+        text-align: center;
+        margin-bottom: 45px;
+    }
+    &__row {
+        margin: 0 -30px;
+    }
+    &__col {
+        padding: 0 30px;
+    }
+}
+
+.clients {
+    text-align: center;
+    .title-h2 {
+        margin-bottom: 30px;
+    }
+    &__border {
+        width: 800px;
+        border: solid 2px $black;
+        padding: 40px 30px;
+        margin: auto;
+    }
+    &__wrap {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+    }
+    &__item {
+        width: 25%;
+        padding: 15px;
+    }
+    &__link {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.news {
+    background-image: url(../images/background/bg-tree.png);
+    .title-h2 {
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 45px;
+    }
+    .title-h3 {
+        color: $white;
+        text-transform: uppercase;
+        line-height: 38px;
+        margin-bottom: 10px;
+    }
+    &__title-bg {
+        background-image: url(../images/background/bg-title.png);
+        background-repeat: no-repeat;
+        height: 38px;
+        margin-bottom: 30px;
+    }
+    &__wrap-elem {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 30px;
+    }
+    &__content {
+        width: 50%;
+    }
+    &__img {
+        width: 25%;
+        img {
+            width: 100%;
+        }
+    }
+    .button-more {
+        float: right;
+        transition: 0.3s;
+        &:hover {
+            color: $white;
+            background-color: $green;
+        }
+    }
+    &__text {
+        color: $white;
+        margin-bottom: 25px;
+    }
+    &__text-highlinght {
+        font-size: 17px;
+        font-weight: 700;
+    }
+}
+
+.contact {
+    padding: 60px 0;
+    .title-h2 {
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    .sub-title {
+        text-align: center;
+        margin-bottom: 10px;
+        a {
+            color: $red-darker;
+            font-weight: 500;
+            transition: 0.3s;
+            &:hover {
+                color: $green;
+            }
+        }
+    }
+    &__form {
+        width: 60%;
+        margin: auto;
+    }
+    &__input,
+    &__textarea {
+        display: block;
+        width: 100%;
+        border: none;
+        border-bottom: solid 1px $black;
+        padding: 15px;
+        margin-bottom: 15px;
+        &:focus {
+            outline: none;
+            border-bottom: solid 1px $green;
+        }
+    }
+    &__textarea {
+        border: solid 1px $black;
+        margin-top: 30px;
+        &:focus {
+            border: solid 1px $green;
+        }
+    }
+    .button-more {
+        float: right;
+        padding: 10px 30px;
+        margin-top: 15px;
+        transition: 0.3s;
+        &:hover {
+            color: $white;
+            background-color: $green;
+        }
+    }
 }
