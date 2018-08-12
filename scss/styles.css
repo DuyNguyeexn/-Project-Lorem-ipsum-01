@@ -655,6 +655,7 @@ button:active {
   background-image: url(../images/background/background-2.png);
   background-repeat: no-repeat;
   background-position: 0 280px;
+  background-size: contain;
   margin-bottom: -300px;
   position: relative;
   top: -300px; }
@@ -1009,5 +1010,4 @@ body {
 #slider .bgLayer,
 #slider .sliderInner .mcSlc {
   background-size: cover !important; }
-
 /*# sourceMappingURL=styles.css.map */
