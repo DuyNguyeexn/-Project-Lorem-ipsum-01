@@ -41,9 +41,11 @@
 #section5,
 #section6 {
     padding-top: 90px;
+    @media (max-width: 767px) {
+        padding-top: 50px;
+    }
 }
 .banner-slide {
-    height: 100vh;
     padding: 0 !important;
 }
 

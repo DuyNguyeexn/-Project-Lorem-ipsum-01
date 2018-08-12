@@ -3,8 +3,17 @@ body {
 }
 #slider, #slider .sliderInner {
     width: 100% !important;
-    height: 100vh;
+    height: 600px;
     border-radius: 0 !important;
+    @media (max-width: 991px) {
+        height: 400px;
+    }
+    @media (max-width: 767px) {
+        height: 300px;
+    }
+    @media (max-width: 575px) {
+        height: 200px;
+    }
 }
 #slider {
     box-shadow: unset;
@@ -13,7 +22,7 @@ body {
     width: 100%;
 }
 #slider .navBulletsWrapper {
-    top: calc(100vh - 30px);
+    top: calc(100% - 30px);
 }
 #slider .navBulletsWrapper div {
     background-image: unset;
@@ -25,4 +34,8 @@ body {
     width: 11px;
     height: 11px;
     background-color: $green;
+}
+#slider .bgLayer,
+#slider .sliderInner .mcSlc {
+    background-size: cover !important;
 }

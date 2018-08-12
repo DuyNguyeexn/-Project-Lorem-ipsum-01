@@ -7,4 +7,7 @@
     border-radius: 10px;
     background-color: transparent;
     padding: 7px 10px;
+    @media (max-width: 767px) {
+        font-size: 14px;
+    }
 }
