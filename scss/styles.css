@@ -461,6 +461,65 @@ button:active {
     .button-more {
       font-size: 14px; } }
 
+@media (min-width: 768px) {
+  .follow {
+    position: fixed;
+    top: 50%;
+    left: 20px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); } }
+.follow__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  color: #ffffff;
+  text-align: center;
+  border: solid 1px #B9D656;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3px;
+  margin: 10px 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+  @media (max-width: 767px) {
+    .follow__item {
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      width: 36px;
+      height: 36px;
+      margin: 20px 5px 0 0; } }
+  .follow__item:hover {
+    background: #ffffff;
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.5); }
+  .follow__item--fb {
+    color: #3D5B99;
+    border-color: #3D5B99; }
+  .follow__item--tw {
+    color: #1DA1F2;
+    border-color: #1DA1F2; }
+  .follow__item--pr {
+    color: #BD081B;
+    border-color: #BD081B; }
+  .follow__item--ig {
+    color: #C04FBD;
+    border-color: #C04FBD; }
+.follow__icon::before {
+  font-size: 14px; }
+.follow__text {
+  font-size: 9px;
+  line-height: unset;
+  margin-top: 3px; }
+
 .modal-fullscreen {
   padding-right: 0 !important; }
   .modal-fullscreen .modal-dialog {
@@ -950,4 +1009,5 @@ body {
 #slider .bgLayer,
 #slider .sliderInner .mcSlc {
   background-size: cover !important; }
+
 /*# sourceMappingURL=styles.css.map */

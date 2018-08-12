@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 11/08/2018 14:04
+  	Creation date: 12/08/2018 13:58
   	*/
 
 @font-face {
@@ -33,3 +33,7 @@ margin-left: 20px;
 .flaticon-down-arrow:before { content: "\f101"; }
 .flaticon-camera:before { content: "\f102"; }
 .flaticon-share:before { content: "\f103"; }
+.flaticon-facebook-logo:before { content: "\f104"; }
+.flaticon-twitter:before { content: "\f105"; }
+.flaticon-pinterest:before { content: "\f106"; }
+.flaticon-instagram-logo:before { content: "\f107"; }

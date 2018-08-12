@@ -1,0 +1,59 @@
+.follow {
+    @media (min-width: 768px) {
+        position: fixed;
+        top: 50%;
+        left: 20px;
+        transform: translateY(-50%);
+    }
+    &__item {
+        display: flex;
+        width: 40px;
+        height: 40px;
+        color: $white;
+        text-align: center;
+        border: solid 1px $green;
+        border-radius: 5px;
+        background-color: $white-opacity-8;
+        justify-content: center;
+        align-items: center;
+        padding: 3px;
+        margin: 10px 0;
+        transition: 0.3s;
+        @media (max-width: 767px) {
+            display: inline-flex;
+            width: 36px;
+            height: 36px;
+            margin: 20px 5px 0 0;
+        }
+        &:hover {
+            background: $white;
+            box-shadow: 0 0 8px $black-opacity-5;
+        }
+        &--fb {
+            color: $facebook;
+            border-color: $facebook;
+        }
+        &--tw {
+            color: $twitter;
+            border-color: $twitter;
+        }
+        &--pr {
+            color: $pinterest;
+            border-color: $pinterest;
+        }
+        &--ig {
+            color: $instagram;
+            border-color: $instagram;
+        }
+    }
+    &__icon {
+        &::before {
+            font-size: 14px;
+        }
+    }
+    &__text {
+        font-size: 9px;
+        line-height: unset;
+        margin-top: 3px;
+    }
+}
