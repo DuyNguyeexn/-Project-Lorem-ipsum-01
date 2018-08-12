@@ -24,6 +24,21 @@ $(document).ready(function() {
     });
     // end Button menu humberger
 
+    // Close menu
+    $(window).resize(function() {
+        var width = $(window).width();
+        if (width < 1200){
+            $(window).on('click', function() {
+                $('#nav-icon2').removeClass('open');
+                $('.navbar-nav').slideUp();
+            });
+            $('#nav-icon2').click(function(event){
+                event.stopPropagation();
+            });
+        }
+    });
+    // end Close menu
+
     // Active Language
     $('.header__language-item').on('click', function() {
         $('.header__languages').find('.active').removeClass('active');

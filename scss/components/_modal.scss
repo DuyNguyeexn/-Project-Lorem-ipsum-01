@@ -1,0 +1,110 @@
+.modal-fullscreen {
+    padding-right: 0 !important;
+    .modal-dialog {
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    .modal-content {
+        border: none;
+        background-color: transparent;
+    }
+    .close {
+        opacity: 1;
+        font-size: 50px;
+        position: absolute;
+        top: 5px;
+        right: 15px;
+        span {
+            color: $white;
+        }
+    }
+}
+
+// Search modal
+.search {
+    .modal-content {
+        height: 100%;
+    }
+    &__form {
+        width: 500px;
+        margin: auto;
+        @media (max-width: 767px) {
+            width: 300px;
+        }
+    }
+    &__input {
+        color: $white;
+        background-color: transparent;
+        border: none;
+        border-bottom: solid 2px $white;
+        border-radius: 0;
+        padding: 15px;
+        @media (max-width: 767px) {
+            padding: 15px 5px;
+        }
+        &::-webkit-input-placeholder {
+            color: $white;
+            transition: 0.3s;
+        }
+        &::-moz-placeholder {
+            color: $white;
+            transition: 0.3s;
+        }
+        &:-ms-input-placeholder {
+            color: $white;
+            transition: 0.3s;
+        }
+        &:-moz-placeholder {
+            color: $white;
+            transition: 0.3s;
+        }
+        &:focus,
+        &:active {
+            color: $white;
+            outline: none;
+            border: none;
+            border-color: transparent;
+            border-bottom: solid 2px $green;
+            background-color: transparent;
+            box-shadow: 0 0 0 0.2rem transparent;
+            &::-webkit-input-placeholder {
+                font-size: 12px;
+            }
+            &::-moz-placeholder {
+                font-size: 12px;
+            }
+            &:-ms-input-placeholder {
+                font-size: 12px;
+            }
+            &:-moz-placeholder {
+                font-size: 12px;
+            }
+        }
+    }
+    &__btn {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        padding: 0;
+        transition: 0.3s;
+        .flaticon-search {
+            transition: 0.3s;
+        }
+        &:hover {
+            background-color: $pink-opacity-4;
+            cursor: pointer;
+            .flaticon-search {
+                color: $green;
+            }
+        }
+    }
+    .input-group-append {
+        margin: 0;
+        position: absolute;
+        right: 5px;
+        top: 10px;
+        z-index: 9999;
+    }
+}

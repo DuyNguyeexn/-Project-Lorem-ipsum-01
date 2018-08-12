@@ -1,6 +1,9 @@
 .header {
     .navbar {
         transition: 0.3s;
+        @media (max-width: 991px) {
+            position: absolute;
+        }
         &.header-small {
             @media (min-width: 992px) {
                 padding: 0;

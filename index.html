@@ -53,7 +53,7 @@
                             </li>
                         </ul>
                         <div class="header__right">
-                            <button class="header__search-btn">
+                            <button class="header__search-btn" data-toggle="modal" data-target="#searchModal">
                                 <span class="flaticon-search header__search-icon"></span>
                             </button>
                             <ul class="header__languages">
@@ -366,6 +366,35 @@
                 <i class="flaticon-down-arrow scroll-top__icon"></i>
             </a>
             <!-- end BTN SCROLL TOP TOP -->
+
+            <!-- MODAL SEARCH -->
+            <!-- Modal -->
+            <div class="modal fade search modal-fullscreen" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <!-- <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div> -->
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <form action="" class="search__form">
+                                <div class="input-group">
+                                    <input type="text" class="form-control search__input" placeholder="Enter your keyword..." aria-label="Enter your keyword..." aria-describedby="basic-addon2">
+                                    <div class="input-group-append">
+                                        <button class="search__btn header__search-btn" type="button">
+                                            <span class="flaticon-search header__search-icon"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- end MODAL SEARCH -->
 
         </div>
 
