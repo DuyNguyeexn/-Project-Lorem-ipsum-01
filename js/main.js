@@ -25,9 +25,9 @@ $(document).ready(function() {
     // end Button menu humberger
 
     // Close menu
-    $(window).resize(function() {
+    $(window).click(function() {
         var width = $(window).width();
-        if (width < 1200){
+        if (width < 991){
             $(window).on('click', function() {
                 $('#nav-icon2').removeClass('open');
                 $('.navbar-nav').slideUp();
