@@ -1,0 +1,18 @@
+.aboutus {
+    &__text {
+        color: $red-darker;
+        font-weight: 500;
+        margin-bottom: 21px;
+    }
+    &__text-highlight {
+        font-size: 15px;
+        font-weight: 600;
+    }
+    &__img-wrap {
+        text-align: center;
+        padding-top: 20px;
+    }
+    &__img {
+        max-width: 100%;
+    }
+}

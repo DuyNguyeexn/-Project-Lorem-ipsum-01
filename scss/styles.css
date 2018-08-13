@@ -524,6 +524,7 @@ button:active {
   margin-top: 3px; }
 
 .page-main {
+  background-color: #ffffff;
   padding-top: 90px;
   padding-bottom: 60px;
   position: relative; }
@@ -540,6 +541,8 @@ button:active {
     top: 0; }
   .page-main .title-h2 {
     text-align: center; }
+  .page-main__wrap {
+    padding-top: 30px; }
 
 .modal-fullscreen {
   padding-right: 0 !important; }
@@ -986,6 +989,19 @@ button:active {
       color: #ffffff;
       background-color: #B9D656; }
 
+.aboutus__text {
+  color: #4A0207;
+  font-weight: 500;
+  margin-bottom: 21px; }
+.aboutus__text-highlight {
+  font-size: 15px;
+  font-weight: 600; }
+.aboutus__img-wrap {
+  text-align: center;
+  padding-top: 20px; }
+.aboutus__img {
+  max-width: 100%; }
+
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
   margin-left: 0; }
@@ -1031,5 +1047,4 @@ body {
 #slider .bgLayer,
 #slider .sliderInner .mcSlc {
   background-size: cover !important; }
-
 /*# sourceMappingURL=styles.css.map */
