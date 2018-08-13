@@ -3,7 +3,7 @@ body {
 }
 #slider, #slider .sliderInner {
     width: 100% !important;
-    height: 600px;
+    height: 100vh;
     border-radius: 0 !important;
     @media (max-width: 991px) {
         height: 400px;
