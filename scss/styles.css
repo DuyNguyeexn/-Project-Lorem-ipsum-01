@@ -364,6 +364,9 @@ button:active {
     background-repeat: no-repeat;
     background-size: cover; }
 
+.banner-img__image {
+  width: 100%; }
+
 .box {
   position: relative;
   overflow: hidden;
