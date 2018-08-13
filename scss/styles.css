@@ -523,6 +523,24 @@ button:active {
   line-height: unset;
   margin-top: 3px; }
 
+.page-main {
+  padding-top: 90px;
+  padding-bottom: 60px;
+  position: relative; }
+  .page-main::before {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 20px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(transparent));
+    background: linear-gradient(rgba(0, 0, 0, 0.1), transparent);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0; }
+  .page-main .title-h2 {
+    text-align: center; }
+
 .modal-fullscreen {
   padding-right: 0 !important; }
   .modal-fullscreen .modal-dialog {
@@ -1013,4 +1031,5 @@ body {
 #slider .bgLayer,
 #slider .sliderInner .mcSlc {
   background-size: cover !important; }
+
 /*# sourceMappingURL=styles.css.map */
