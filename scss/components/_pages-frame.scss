@@ -3,6 +3,9 @@
     padding-top: 90px;
     padding-bottom: 60px;
     position: relative;
+    @media (max-width: 767px) {
+        padding-top: 50px;
+    }
     &::before {
         content: '';
         display: inline-block;
@@ -19,5 +22,8 @@
     }
     &__wrap {
         padding-top: 30px;
+        @media (max-width: 767px) {
+            padding-top: 18px;
+        }
     }
 }
