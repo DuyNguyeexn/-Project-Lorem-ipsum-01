@@ -1382,6 +1382,7 @@ img {
 }
 .aboutus__img {
   max-width: 100%;
+  margin: auto;
 }
 
 .news-page__item {
