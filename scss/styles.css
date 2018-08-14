@@ -141,6 +141,10 @@ button:active {
   outline: none;
 }
 
+img {
+  display: block;
+}
+
 .header .navbar {
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -691,6 +695,75 @@ button:active {
   .page-main__wrap {
     padding-top: 18px;
   }
+}
+
+.newbox__img-wrap {
+  margin-bottom: 15px;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.newbox__img-wrap::before {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  background-color: transparent;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  top: 50%;
+  bottom: 50%;
+  -webkit-transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+}
+.newbox__img {
+  width: 100%;
+}
+.newbox__title {
+  color: #4A0207;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.newbox__title:hover {
+  color: #B9D656;
+}
+.newbox:hover {
+  cursor: pointer;
+}
+.newbox:hover .newbox__img-wrap::before {
+  width: 1000px;
+  height: 1000px;
+  background-color: rgba(100, 0, 0, 0.4);
+  border-radius: 0;
+  -webkit-transform: translate(-500px, -500px);
+          transform: translate(-500px, -500px);
+}
+
+.pagination__item {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  background-image: url(../images/background/pagination.svg);
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+  margin: 0 5px;
+}
+.pagination a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  font-weight: 600;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.pagination a:hover {
+  color: #4A0207;
 }
 
 .modal-fullscreen {
@@ -1311,6 +1384,16 @@ button:active {
   max-width: 100%;
 }
 
+.news-page__item {
+  margin-bottom: 30px;
+}
+.news-page__pagination {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10px;
+}
+
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
   margin-left: 0;
@@ -1371,4 +1454,5 @@ body {
 #slider .sliderInner .mcSlc {
   background-size: cover !important;
 }
+
 /*# sourceMappingURL=styles.css.map */

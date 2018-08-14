@@ -1,0 +1,43 @@
+.newbox {
+    
+    &__img-wrap {
+        margin-bottom: 15px;
+        overflow: hidden;
+        position: relative;
+        transition: 0.5s;
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 0;
+            height: 0;
+            background-color: transparent;
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            right: 50%;
+            top: 50%;
+            bottom: 50%;
+            transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+        }
+    }
+    &__img {
+        width: 100%;
+    }
+    &__title {
+        color: $red-darker;
+        transition: 0.3s;
+        &:hover {
+            color: $green;
+        }
+    }
+    &:hover {
+        cursor: pointer;
+        .newbox__img-wrap::before {
+            width: 1000px;
+            height: 1000px;
+            background-color: $pink-opacity-4;
+            border-radius: 0;
+            transform: translate(-500px, -500px);
+        }
+    }
+}
