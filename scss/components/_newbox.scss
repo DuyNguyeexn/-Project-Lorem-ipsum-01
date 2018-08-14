@@ -1,7 +1,5 @@
 .newbox {
-    
     &__img-wrap {
-        margin-bottom: 15px;
         overflow: hidden;
         position: relative;
         transition: 0.5s;
@@ -25,6 +23,10 @@
     }
     &__title {
         color: $red-darker;
+        background-color: $white;
+        padding-top: 15px;
+        position: relative;
+        z-index: 1;
         transition: 0.3s;
         &:hover {
             color: $green;
