@@ -1421,6 +1421,27 @@ img {
   margin-top: 10px;
 }
 
+.new-detail .title-h2 {
+  text-align: left;
+}
+.new-detail__img-wrap {
+  margin-bottom: 50px;
+}
+.new-detail__img {
+  width: 100%;
+}
+.new-detail__text {
+  margin-bottom: 20px;
+}
+.new-detail__wrap-item {
+  padding-top: 30px;
+}
+@media (max-width: 767px) {
+  .new-detail__wrap-item {
+    padding-top: 18px;
+  }
+}
+
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
   margin-left: 0;
