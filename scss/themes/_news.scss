@@ -13,17 +13,71 @@
     }
     &__img-wrap {
         margin-bottom: 50px;
+        @media (max-width: 991px) {
+            margin-bottom: 20px;
+        }
     }
     &__img {
         width: 100%;
     }
     &__text {
         margin-bottom: 20px;
+        @media (max-width: 991px) {
+            margin-bottom: 10px;
+        }
     }
     &__wrap-item {
         padding-top: 30px;
         @media (max-width: 767px) {
             padding-top: 18px;
         }
+    }
+    &__cmt {
+        padding-top: 28px;
+        @media (max-width: 991px) {
+            padding-top: 20px;
+            margin-bottom: 40px;
+        }
+    }
+    &__cmt-title {
+        color: $red-darker;
+        margin-bottom: 25px;
+    }
+    &__elem {
+        display: block;
+        width: 100%;
+        border: solid 1px $black;
+        padding: 15px;
+        margin-bottom: 15px;
+        transition: 0.3s;
+        &:focus {
+            outline: none;
+            border: solid 1px $green;
+        }
+    }
+    &__button {
+        padding: 10px 30px;
+        float: right;
+        margin-top: 15px;
+        transition: 0.3s;
+        &:hover {
+            color: $white;
+            background-color: $green;
+        }
+    }
+    &__fb-wrap {
+        width: 100%;
+    }
+    &__fb {
+        width: 100%;
+    }
+    &__sticky {
+        @media (min-width: 992px) {
+            position: sticky;
+            top: 80px;
+            left: 0;
+            right: 0;
+        }
+        margin-bottom: 0;
     }
 }
