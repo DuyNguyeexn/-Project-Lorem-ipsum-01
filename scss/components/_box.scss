@@ -28,6 +28,7 @@
         bottom: 0;
         left: 0;
         right: 0;
+        transition: 0.5s;
         &:hover {
             .title-h5 {
                 color: $green;
@@ -92,6 +93,47 @@
             top: 30px;
             opacity: 1;
             visibility: visible;
+        }
+    }
+}
+.box2 {
+    .box__link {
+        height: 70px;
+        line-height: 70px;
+        padding: 25px 5px;
+    }
+    &__text {
+        color: $white;
+        position: absolute;
+        top: 100%;
+        left: 30px;
+        right: 30px;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s;
+    }
+    &-big {
+        .box2__text {
+            left: 60px;
+            right: 60px;
+        }
+    }
+    &:hover {
+        .box__link {
+            height: 100%;
+            padding-top: 50px;
+        }
+        .box2__text {
+            top: 90px;
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    &-big {
+        &:hover::before {
+            width: 3000px;
+            height: 3000px;
+            transform: translate(-1500px, -1500px);
         }
     }
 }
