@@ -60,3 +60,20 @@
         }
     }
 }
+.project-detail {
+    &__wrap-img {
+        margin-bottom: 30px;
+    }
+    &__img {
+        width: 100%;
+    }
+    .button-more {
+        margin-top: 15px;
+        float: right;
+        transition: 0.3s;
+        &:hover {
+            color: $white;
+            background-color: $green;
+        }
+    }
+}

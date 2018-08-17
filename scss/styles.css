@@ -1604,6 +1604,23 @@ img {
   margin-bottom: 30px;
 }
 
+.project-detail__wrap-img {
+  margin-bottom: 30px;
+}
+.project-detail__img {
+  width: 100%;
+}
+.project-detail .button-more {
+  margin-top: 15px;
+  float: right;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.project-detail .button-more:hover {
+  color: #ffffff;
+  background-color: #B9D656;
+}
+
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
   margin-left: 0;
