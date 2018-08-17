@@ -1621,6 +1621,23 @@ img {
   background-color: #B9D656;
 }
 
+.services__text {
+  padding-left: 15px;
+  position: relative;
+}
+.services__text::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-image: url(../images/background/pagination.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 11px;
+}
+
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
   margin-left: 0;
@@ -1681,4 +1698,5 @@ body {
 #slider .sliderInner .mcSlc {
   background-size: cover !important;
 }
+
 /*# sourceMappingURL=styles.css.map */
