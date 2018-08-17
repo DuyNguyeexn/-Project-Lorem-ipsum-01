@@ -1550,12 +1550,58 @@ img {
 .project__row1, .project__row2, .project__row3 {
   margin-bottom: 30px;
 }
-
-.communication .project__row2 .box2-small {
-  margin-bottom: 30px;
+.project .box img {
+  width: 100%;
 }
-.communication .project__row2 .box2-small:last-child {
-  margin-bottom: 0;
+
+.communication .project__row2--height {
+  margin-bottom: -2px;
+}
+@media (max-width: 991px) {
+  .communication .project__row2--height {
+    margin-bottom: 30px;
+  }
+}
+.communication .project__row2 .box2-small .box__img-wrap {
+  height: 302px;
+  overflow: hidden;
+}
+@media (max-width: 1199px) {
+  .communication .project__row2 .box2-small .box__img-wrap {
+    height: 250px;
+  }
+}
+@media (max-width: 991px) {
+  .communication .project__row2 .box2-small .box__img-wrap {
+    height: auto;
+  }
+}
+.communication .project__row2 .box2-small .box__img-wrap img {
+  height: 100%;
+  width: auto;
+}
+@media (max-width: 991px) {
+  .communication .project__row2 .box2-small .box__img-wrap img {
+    height: auto;
+    width: 100%;
+  }
+}
+.communication .box2-small {
+  margin-bottom: 31px;
+}
+.communication .box2__text {
+  height: 140px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+@media (max-width: 991px) {
+  .communication .box2__text {
+    height: 112px;
+  }
+}
+
+.corporate .project__row4 .box {
+  margin-bottom: 30px;
 }
 
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
