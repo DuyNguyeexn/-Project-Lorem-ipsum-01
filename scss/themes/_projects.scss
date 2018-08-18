@@ -11,6 +11,11 @@
     }
 }
 .communication {
+    .page-main__wrap {
+        @media (max-width: 991px) {
+            margin-bottom: -31px;
+        }
+    }
     .project {
         &__row2 {
             &--height {
@@ -57,6 +62,14 @@
             .box {
                 margin-bottom: 30px;
             }
+        }
+    }
+}
+.individual,
+.corporate {
+    .page-main__wrap {
+        @media (max-width: 991px) {
+            margin-bottom: 0;
         }
     }
 }

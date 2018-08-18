@@ -99,8 +99,23 @@
 .box2 {
     .box__link {
         height: 70px;
+        padding: 0;
+        @media (max-width: 991px) {
+            height: 50px;
+        }
+        @media (max-width: 767px) {
+            height: 40px;
+        }
+    }
+    .title-h5 {
         line-height: 70px;
-        padding: 25px 5px;
+        @media (max-width: 991px) {
+            line-height: 50px;
+        }
+        @media (max-width: 767px) {
+            font-size: 15px;
+            line-height: 40px;
+        }
     }
     &__text {
         color: $white;
@@ -111,6 +126,9 @@
         opacity: 0;
         visibility: hidden;
         transition: 0.5s;
+        @media (max-width: 767px) {
+            display: none;
+        }
     }
     &-big {
         .box2__text {
@@ -121,12 +139,18 @@
     &:hover {
         .box__link {
             height: 100%;
-            padding-top: 50px;
+            padding-top: 30px;
+            @media (max-width: 991px) {
+                padding-top: 20px;
+            }
         }
         .box2__text {
             top: 90px;
             opacity: 1;
             visibility: visible;
+            @media (max-width: 991px) {
+                top: 65px;
+            }
         }
     }
     &-big {
