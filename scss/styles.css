@@ -1621,11 +1621,11 @@ img {
   background-color: #B9D656;
 }
 
-.services__text {
+.aboutus__text.services__text {
   padding-left: 15px;
   position: relative;
 }
-.services__text::before {
+.aboutus__text.services__text::before {
   content: '';
   display: inline-block;
   width: 6px;
@@ -1698,5 +1698,4 @@ body {
 #slider .sliderInner .mcSlc {
   background-size: cover !important;
 }
-
 /*# sourceMappingURL=styles.css.map */
