@@ -13,7 +13,7 @@
         text-align: center;
         border: solid 1px $green;
         border-radius: 5px;
-        background-color: $white-opacity-8;
+        background-color: $white;
         justify-content: center;
         align-items: center;
         padding: 3px;
@@ -26,24 +26,36 @@
             margin: 20px 5px 0 0;
         }
         &:hover {
-            background: $white;
+            color: $white;
             box-shadow: 0 0 8px $black-opacity-5;
         }
         &--fb {
             color: $facebook;
             border-color: $facebook;
+            &:hover {
+                background-color: $facebook;
+            }
         }
         &--tw {
             color: $twitter;
             border-color: $twitter;
+            &:hover {
+                background-color: $twitter;
+            }
         }
         &--pr {
             color: $pinterest;
             border-color: $pinterest;
+            &:hover {
+                background-color: $pinterest;
+            }
         }
         &--ig {
             color: $instagram;
             border-color: $instagram;
+            &:hover {
+                background-color: $instagram;
+            }
         }
     }
     &__icon {

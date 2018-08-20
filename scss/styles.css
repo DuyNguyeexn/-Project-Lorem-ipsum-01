@@ -704,7 +704,7 @@ img {
   text-align: center;
   border: solid 1px #B9D656;
   border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #ffffff;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -727,7 +727,7 @@ img {
   }
 }
 .follow__item:hover {
-  background: #ffffff;
+  color: #ffffff;
   -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
 }
@@ -735,17 +735,29 @@ img {
   color: #3D5B99;
   border-color: #3D5B99;
 }
+.follow__item--fb:hover {
+  background-color: #3D5B99;
+}
 .follow__item--tw {
   color: #1DA1F2;
   border-color: #1DA1F2;
+}
+.follow__item--tw:hover {
+  background-color: #1DA1F2;
 }
 .follow__item--pr {
   color: #BD081B;
   border-color: #BD081B;
 }
+.follow__item--pr:hover {
+  background-color: #BD081B;
+}
 .follow__item--ig {
   color: #C04FBD;
   border-color: #C04FBD;
+}
+.follow__item--ig:hover {
+  background-color: #C04FBD;
 }
 .follow__icon::before {
   font-size: 14px;
