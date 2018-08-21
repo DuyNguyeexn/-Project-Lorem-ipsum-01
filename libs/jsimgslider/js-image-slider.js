@@ -2,7 +2,7 @@ var sliderOptions=
 {
 	sliderId: "slider",
 	startSlide: 0,
-	effect: "1,2,3,4,5,6,7,8",
+	effect: "1,2,7,8",
 	effectRandom: true,
 	pauseTime: 2500,
 	transitionTime: 2000,
