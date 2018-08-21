@@ -1485,9 +1485,37 @@ img {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.contact__input:focus, .contact__textarea:focus {
+.contact__input::-webkit-input-placeholder, .contact__textarea::-webkit-input-placeholder {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.contact__input::-moz-placeholder, .contact__textarea::-moz-placeholder {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.contact__input:-ms-input-placeholder, .contact__textarea:-ms-input-placeholder {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.contact__input:-moz-placeholder, .contact__textarea:-moz-placeholder {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.contact__input:focus, .contact__input:active, .contact__textarea:focus, .contact__textarea:active {
   outline: none;
   border-bottom: solid 1px #B9D656;
+}
+.contact__input:focus::-webkit-input-placeholder, .contact__input:active::-webkit-input-placeholder, .contact__textarea:focus::-webkit-input-placeholder, .contact__textarea:active::-webkit-input-placeholder {
+  font-size: 12px;
+}
+.contact__input:focus::-moz-placeholder, .contact__input:active::-moz-placeholder, .contact__textarea:focus::-moz-placeholder, .contact__textarea:active::-moz-placeholder {
+  font-size: 12px;
+}
+.contact__input:focus:-ms-input-placeholder, .contact__input:active:-ms-input-placeholder, .contact__textarea:focus:-ms-input-placeholder, .contact__textarea:active:-ms-input-placeholder {
+  font-size: 12px;
+}
+.contact__input:focus:-moz-placeholder, .contact__input:active:-moz-placeholder, .contact__textarea:focus:-moz-placeholder, .contact__textarea:active:-moz-placeholder {
+  font-size: 12px;
 }
 .contact__textarea {
   border: solid 1px #000000;

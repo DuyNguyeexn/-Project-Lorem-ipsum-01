@@ -373,10 +373,36 @@
         padding: 15px;
         margin-bottom: 15px;
         transition: 0.3s;
-        &:focus {
+        &::-webkit-input-placeholder {
+            transition: 0.3s;
+        }
+        &::-moz-placeholder {
+            transition: 0.3s;
+        }
+        &:-ms-input-placeholder {
+            transition: 0.3s;
+        }
+        &:-moz-placeholder {
+            transition: 0.3s;
+        }
+        &:focus,
+        &:active {
             outline: none;
             border-bottom: solid 1px $green;
+            &::-webkit-input-placeholder {
+                font-size: 12px;
+            }
+            &::-moz-placeholder {
+                font-size: 12px;
+            }
+            &:-ms-input-placeholder {
+                font-size: 12px;
+            }
+            &:-moz-placeholder {
+                font-size: 12px;
+            }
         }
+
     }
     &__textarea {
         border: solid 1px $black;
