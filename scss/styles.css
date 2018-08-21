@@ -1628,6 +1628,9 @@ img {
 .project .box img {
   width: 100%;
 }
+.project .box::before {
+  display: none;
+}
 
 @media (max-width: 991px) {
   .communication .page-main__wrap {
