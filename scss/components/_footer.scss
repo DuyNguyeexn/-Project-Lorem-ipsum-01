@@ -21,4 +21,24 @@
         font-weight: 500;
         line-height: 25px;
     }
+    &__number {
+        white-space: nowrap;
+        margin-right: 16px;
+        position: relative;
+        &::after {
+            content: '';
+            display: inline-block;
+            width: 5px;
+            height: 1px;
+            background-color: $white;
+            position: absolute;
+            top: 50%;
+            right: -13px;
+        }
+        &:last-child {
+            &::after {
+                display: none;
+            }
+        }
+    }
 }

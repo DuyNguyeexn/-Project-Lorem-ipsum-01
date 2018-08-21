@@ -158,6 +158,7 @@ img {
   .header .navbar.header-small {
     padding: 0;
     background: rgba(0, 0, 0, 0.3);
+    padding: 5px 0;
   }
 }
 @media (min-width: 992px) {
@@ -229,6 +230,11 @@ img {
   .header .nav-link {
     padding: 18px 0;
   }
+}
+.header__logo-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .header__right {
   margin-top: -2px;
@@ -426,6 +432,24 @@ img {
 .footer__element {
   font-weight: 500;
   line-height: 25px;
+}
+.footer__number {
+  white-space: nowrap;
+  margin-right: 16px;
+  position: relative;
+}
+.footer__number::after {
+  content: '';
+  display: inline-block;
+  width: 5px;
+  height: 1px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 50%;
+  right: -13px;
+}
+.footer__number:last-child::after {
+  display: none;
 }
 
 .title-h2 {
