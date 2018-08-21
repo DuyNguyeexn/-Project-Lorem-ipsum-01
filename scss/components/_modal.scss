@@ -1,18 +1,24 @@
 .modal-fullscreen {
     padding-right: 0 !important;
     .modal-dialog {
-        width: 100%;
-        max-width: 100%;
-        height: 100%;
-        margin: 0;
+        width: 500px;
+        height: auto;
+        margin: auto;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%) !important;
+        @media (max-width: 767px) {
+            width: 300px;
+        }
     }
     .modal-content {
         border: none;
         background-color: transparent;
     }
     .close {
-        opacity: 1;
+        display: none;
         font-size: 50px;
+        opacity: 1;
         position: absolute;
         top: 5px;
         right: 15px;
