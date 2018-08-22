@@ -6,13 +6,30 @@
         }
         &.header-small {
             @media (min-width: 992px) {
+                background-color: $white-opacity-95;
+                box-shadow: 0 0 2px 0 $gray-opacity-2;
                 padding: 0;
-                background: $black-opacity-3;
                 padding: 5px 0;
             }
             .navbar-brand {
                 @media (min-width: 992px) {
                     width: 100px;
+                }
+            }
+            .nav-link,
+            .header__search-icon,
+            .header__language-item {
+                @media (min-width: 992px) {
+                    color: $gray;
+                    &:hover,
+                    &.active {
+                        color: $green;
+                    }
+                }
+            }
+            .header__language-item span {
+                @media (min-width: 992px) {
+                    color: $green;
                 }
             }
         }
@@ -55,7 +72,7 @@
     }
     .nav-link {
         font-size: 16px;
-        color: $white !important;
+        color: $white;
         font-weight: 700;
         text-transform: uppercase;
         transition: 0.3s;
@@ -87,6 +104,10 @@
     }
     &__search-icon {
         color: $white;
+        transition: 0.3s;
+        &:hover {
+            color: $green;
+        }
         &::before {
             font-size: 16px;
             font-weight: 900;
