@@ -49,4 +49,22 @@ $(document).ready(function() {
     // Wow active
     new WOW().init();
     // end Wow active
+
+    // MP Mansory
+    $("#my-gallery-container").mpmansory(
+        {
+            childrenClass: 'js-project-detail-wrap-img', // default is a div
+            columnClasses: 'padding', //add classes to items
+            breakpoints:{
+                lg: 4, 
+                md: 4, 
+                sm: 12,
+                xs: 12
+            },
+            distributeBy: { order: true, height: false, attr: 'data-order', attrOrder: 'asc' }, //default distribute by order, options => order: true/false, height: true/false, attr => 'data-order', attrOrder=> 'asc'/'desc'
+            onload: function (items) {
+                return true;
+            } 
+        }
+    );
 });
