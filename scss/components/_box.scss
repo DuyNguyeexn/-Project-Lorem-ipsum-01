@@ -161,3 +161,26 @@
         }
     }
 }
+.box-project {
+    &:hover &__text {
+        opacity: 1;
+        visibility: visible;
+        top: 90px;
+    }
+    &__text {
+        height: 140px;
+        color: $white;
+        padding: 0 30px;
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        overflow: hidden;
+        top: 50%;
+        right: 0;
+        left: 0;
+        transition: 0.3s;
+        @media (max-width: 991px) {
+            display: none;
+        }
+    }
+}

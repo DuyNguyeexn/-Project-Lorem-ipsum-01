@@ -735,6 +735,31 @@ img {
           transform: translate(-1500px, -1500px);
 }
 
+.box-project:hover .box-project__text {
+  opacity: 1;
+  visibility: visible;
+  top: 90px;
+}
+.box-project__text {
+  height: 140px;
+  color: #ffffff;
+  padding: 0 30px;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  right: 0;
+  left: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+@media (max-width: 991px) {
+  .box-project__text {
+    display: none;
+  }
+}
+
 .button-more {
   font-size: 16px;
   color: #B9D656;
