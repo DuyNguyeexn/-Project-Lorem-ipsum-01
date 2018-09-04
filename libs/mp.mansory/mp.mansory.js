@@ -5,6 +5,7 @@
 		var settings = $.extend({
 			childrenClass: '',
 			breakpoints: {
+					xl: 4,
 					lg: 4,
 					md: 4,
 					sm: 6,
@@ -17,7 +18,7 @@
 				height: false
 			},
 			onload: function ( items ) {
-				return true;
+				return false;
 			}
 			
 		}, options);
