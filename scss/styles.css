@@ -1471,6 +1471,7 @@ img {
 
 .news {
   background-image: url(../images/background/bg-tree.png);
+  background-size: cover;
 }
 @media (max-width: 991px) {
   .news {
